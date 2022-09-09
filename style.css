@@ -1,0 +1,26 @@
+body{
+    background-color: papayawhip;
+}
+h1,p,h2{
+    color: saddlebrown;
+}
+.zöld{
+    background-color: green;
+    text-align: center;
+}
+.piros{
+    background-color: red;
+    text-align: center;
+}
+.lila{
+    background-color: purple;
+    text-align: center;
+}
+.sarga{
+    background-color: yellow;
+    text-align: center;
+}
+table{
+    width: 300px blue;
+    border: 1px blue;
+}
