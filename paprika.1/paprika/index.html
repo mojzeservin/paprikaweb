@@ -6,30 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Paprika</title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: #555;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+      }
+      
+      .topnav #myLinks {
+        display: none;
+      }
+      
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      
+      .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .active {
+        background-color: brown;
+        color: white;
+      }
+</style>
 </head>
 <body>
     <div id="fejlec">
         <h1 style="color: black;">Ismered a legcsípősebbet?</h1>
     </div>
-    <div id="fokeret">
+    <div class="topnav">
+        <a href="#home" class="active">Fajtái</a>
+        <div id="myLinks">
+          <a href="./képek/sok.png" class="nav-link">Közönséges paprika</a>
+          <a href="https://hu.wikipedia.org/wiki/Cserj%C3%A9s_paprika" class="nav-link">Cserjés paprika</a>
+          <a href="https://hu.wikipedia.org/wiki/K%C3%ADnai_paprika" class="nav-link">Kínai paprika</a>
+          <a href="https://hu.wikipedia.org/wiki/Bogy%C3%B3s_paprika" class="nav-link">Bogyós paprika</a>
+          <a href="https://hu.wikipedia.org/wiki/Sz%C5%91r%C3%B6s_paprika" class="nav-link">Szőrös paprika</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+<div class="">
+    <div id="fokeret">        
         <div id="menu">
             <h2>Fajtái</h2>
-            <p>Öt faját, de sok változattal termesztik szerte a világon</p>
-            <nav class="col-lg-12 navbar navbar-expand-md navbar-dark pt-2 pb-2">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mynav">
+            <p>Öt faját, de sok változattal termesztik szerte a világon</p>                                       
                     <ul>
-                        <li class="nav-item"><a href="./képek/sok.png" class="nav-link">Közönséges paprika</a></li>
-                        <li class="nav-item"><a href="https://hu.wikipedia.org/wiki/Cserj%C3%A9s_paprika" class="nav-link">Cserjés paprika</a></li>
-                        <li class="nav-item"><a href="https://hu.wikipedia.org/wiki/K%C3%ADnai_paprika" class="nav-link">Kínai paprika</a></li>
-                        <li class="nav-item"><a href="https://hu.wikipedia.org/wiki/Bogy%C3%B3s_paprika" class="nav-link">Bogyós paprika</a></li>
-                        <li class="nav-item"><a href="https://hu.wikipedia.org/wiki/Sz%C5%91r%C3%B6s_paprika" class="nav-link">Szőrös paprika</a></li>
-                    </ul>    
-                </div>
-            </nav>
+                        <li><a href="./képek/sok.png" class="nav-link">Közönséges paprika</a></li>
+                        <li><a href="https://hu.wikipedia.org/wiki/Cserj%C3%A9s_paprika" class="nav-link">Cserjés paprika</a></li>
+                        <li><a href="https://hu.wikipedia.org/wiki/K%C3%ADnai_paprika" class="nav-link">Kínai paprika</a></li>
+                        <li><a href="https://hu.wikipedia.org/wiki/Bogy%C3%B3s_paprika" class="nav-link">Bogyós paprika</a></li>
+                        <li><a href="https://hu.wikipedia.org/wiki/Sz%C5%91r%C3%B6s_paprika" class="nav-link">Szőrös paprika</a></li>
+                    </ul>
+</div>                                                
         </div>
         <div id="tartalom">
             <h2>Bemutatása</h2>
@@ -61,5 +120,17 @@
             </table>
         </div>            
     </div>
+    
+      
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 </html>
