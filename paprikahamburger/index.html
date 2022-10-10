@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Paprika</title>
+  </head>
+<body>
+    <div id="fejlec">
+        <h1 style="color: black;">Ismered a legcsípősebbet?</h1>
+    </div>
+    <div class="topnav" id="topnav">
+        <a href="#home" class="active">Fajtái</a>
+        <div id="myLinks">
+          <a href="./képek/sok.png" class="nav-link">Közönséges paprika</a>
+          <a href="https://hu.wikipedia.org/wiki/Cserj%C3%A9s_paprika" class="nav-link">Cserjés paprika</a>
+          <a href="https://hu.wikipedia.org/wiki/K%C3%ADnai_paprika" class="nav-link">Kínai paprika</a>
+          <a href="https://hu.wikipedia.org/wiki/Bogy%C3%B3s_paprika" class="nav-link">Bogyós paprika</a>
+          <a href="https://hu.wikipedia.org/wiki/Sz%C5%91r%C3%B6s_paprika" class="nav-link">Szőrös paprika</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+<div class="">
+    <div id="fokeret">        
+        <div id="menu">
+            <h2>Fajtái</h2>
+            <p>Öt faját, de sok változattal termesztik szerte a világon</p>                                       
+                    <ul>
+                        <li><a href="./képek/sok.png" class="nav-link">Közönséges paprika</a></li>
+                        <li><a href="https://hu.wikipedia.org/wiki/Cserj%C3%A9s_paprika" class="nav-link">Cserjés paprika</a></li>
+                        <li><a href="https://hu.wikipedia.org/wiki/K%C3%ADnai_paprika" class="nav-link">Kínai paprika</a></li>
+                        <li><a href="https://hu.wikipedia.org/wiki/Bogy%C3%B3s_paprika" class="nav-link">Bogyós paprika</a></li>
+                        <li><a href="https://hu.wikipedia.org/wiki/Sz%C5%91r%C3%B6s_paprika" class="nav-link">Szőrös paprika</a></li>
+                    </ul>
+</div>                                                
+        </div>
+        <div id="tartalom">
+            <h2>Bemutatása</h2>
+            A paprika a burgonyafélék közé tartozó, Közép-Amerikából származó faj. Európába Kolumbusz orvosa hozta az első paprikát. A növény termése üreges bogyótermés, amely A- és C-vitaminban igen gazdag. Csípős ízét a kapszaicin nevű hatóanyag okozza. Jelentős fűszer- és gyógynövény. Magyarországon a XVI. század óta számos változatban termesztik.
+            <h2>Csípősség</h2>
+            A paprika csípősségének (kapszaicin tartalmának) mértékegysége a Scoville egység. Értéke 0 (édes) és 300 000 (ehetetlenül csípős) egység között változik. Egy paprika Scoville értéke azt az arányt mutatja, amely megadja, hogy a minta csípőssége milyen arányú hígításban nem érezhető már.
+
+            <table>
+                <tr>
+                    <th>Paprika</th>
+                    <th>Csípősség (Scoville érték)</th>
+                </tr>
+                <tr>
+                    <td>zöldpaprika</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>a kevésbé csípős hazai paprikák</td>
+                    <td>500-1000</td>
+                </tr>
+                <tr>
+                    <td>csípős paprikák</td>
+                    <td>1500-2500</td>
+                </tr>
+                <tr>
+                    <td>a mexikói Serrano chili</td>
+                    <td>5000-20000</td>
+                </tr>
+            </table>
+        </div>            
+    </div>
+    
+      
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>
